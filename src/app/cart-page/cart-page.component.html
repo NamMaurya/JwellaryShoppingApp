@@ -1,0 +1,39 @@
+<app-not-found [visible]="!c || c.items.length <=0"
+notFoundMessage="Item Not Found !!"
+resetLinkText="Go to home page !!"></app-not-found>
+<div *ngIf="c && c.items.length>0" class="container">
+    <ul>
+        <li *ngFor="let cItem of c.items">
+            <div>
+                <img [src]="cItem.jewell.imageUrl" [alt]="cItem.jewell.name">
+            </div>
+            <div class="name">
+                <a routerLink="/jewell/{{cItem.jewell.id}}">{{cItem.jewell.name}}</a>
+            </div>
+            <div>
+                <select #quantitySelect (change)="changeQuantity(cItem,quantitySelect.value)">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div>
+                ₹{{cItem.price}}
+            </div>
+            <div>
+                <button class="remove-button" (click)="removeFromCart(cItem)">Remove</button>
+            </div>
+        </li>
+    </ul>
+
+    <div class="checkout">
+        <div class="jewell-count">Total Product: {{c.items.length}}</div>
+        <div class="total-price">Total Price: ₹{{c.totalPrice}}</div>
+
+        <a routerLink="/checkout">Proceed to checkout</a>
+
+    </div>
+
+</div>

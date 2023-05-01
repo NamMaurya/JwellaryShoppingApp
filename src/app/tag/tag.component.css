@@ -1,0 +1,20 @@
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+
+}
+
+div a{
+    padding: 0.3rem 0.1rem;
+    margin: 0.2rem 1.19rem;
+    border-radius: 10rem;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(191 193 207);
+    width: 184px;
+    font-size: medium;
+    text-align: center;
+    font-family: cursive;
+}

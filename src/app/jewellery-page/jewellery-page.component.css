@@ -1,0 +1,83 @@
+img{
+    height: 25rem;
+    width: 25rem;
+    margin-left: 75px;
+    margin-top: 15px;
+}
+
+.name{
+    margin-bottom: 18px;
+    font-size: 30px;
+    font-family: cursive;
+    color:  rgb(138 144 187);
+}
+
+.favorite{
+    color: #fea2b2;
+    font-size: 55px;
+    position: absolute;
+    margin-left: 35rem;
+}
+
+.favorite.not{
+    color: rgb(226 226 226);
+}
+
+.star-rating{
+    margin-top: 69px;
+    position: absolute;
+    margin-left: 45px;
+}
+
+.content{
+    text-align: center;
+    display: block;
+    width: 45rem;
+    position: relative;
+    margin-left: 32rem;
+    margin-top: -25rem;
+    height: 24rem;
+}
+
+.price{
+    margin-top: 8px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 56px;
+    font-size: 40px;
+    font-family: math;
+
+}
+
+.rate{
+    position: absolute;
+    margin-top: 8rem;
+    color: #808080c4;
+    margin-left: 5rem;
+}
+
+.material{
+    position: absolute;
+    margin-top: 10.2rem;
+    margin-left: 3rem;
+    font-size: 24px;
+    color: rgb(95 106 106);
+}
+
+.button{
+    margin-top: 14rem;
+    height: 3.5rem;
+    width: 81%;
+    border: none;
+    border-radius: 34px;
+    background-color: #ec9cab;
+    color: white;
+    font-size: 29px;
+    text-shadow: -3px 0px 12px #d32055;
+    font-family: cursive;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #e8798e;
+}

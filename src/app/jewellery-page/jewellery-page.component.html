@@ -1,0 +1,22 @@
+<div class="image">
+    <img [src]="j.imageUrl" [alt]="j.name">
+</div>
+<div class="content">
+    <div class="name">
+        {{j.name}}
+    </div>
+    <span class="favorite {{j.favourite?'':'not'}}">&#9829;</span>
+    <div class="star-rating">
+        <star-rating [value]=j.star [totalstars]="5" checkedcolor="rgb(138 144 187)" uncheckedcolor="rgb(175, 191, 191)"
+            size="40px" [readonly]="true"></star-rating>
+    </div>
+    <div class="rate">{{j.star}} star rating</div>
+    <div class="price">
+        ₹{{j.price}}
+        <!-- {{j.price|currency}} -->
+    </div>
+    <div class="material">
+        Material - {{j.material}}
+    </div>
+    <button (click)="addToCart()" class="button">Add to cart</button>
+</div>

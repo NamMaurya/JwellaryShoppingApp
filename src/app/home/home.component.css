@@ -1,0 +1,102 @@
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left: -11px;
+}
+
+img {
+    height: 241px;
+    width: 241px;
+    padding: 0px;
+    margin: 12px;
+    /* border: 3px solid  rgb(204 207 228 / 44%); */
+    /* margin: -3px; */
+}
+ul li{
+    padding: 9px;
+}
+
+ul li a{
+    height: 390px;
+    width: 272px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #07078c;
+    /* border: 2px solid #5b5ba9; */
+    border-radius: 23px;
+
+}
+
+li a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    /* border: 1px solid rgb(175, 191, 191); */
+    box-shadow:13px 13px 5px rgb(175, 191, 191);
+}
+
+.name{
+    margin-bottom: -4px;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.favorite{
+    color: #dd5e75;
+    font-size: 20px;
+}
+
+.favorite.not{
+    color : rgb(175, 191, 191);
+}
+
+.star-rating{
+    margin-top: -9px;
+}
+
+.content{
+    padding: 4px;
+    font-size: medium;
+    text-align: center;
+}
+
+.price{
+    font-size: large;
+    color: black;
+    margin-top: 4px;
+    font-weight: bold;
+    /* font-family: cursive; */
+
+}
+
+.home {
+    width: 98%;
+    height: 490px;
+    margin-top: 34px;
+
+}
+
+.home-text1, .home-text2, .home-text3{
+    font-family: "Sofia";
+    position: absolute;
+    margin-top: -26rem;
+    text-shadow: 0 0 black;
+    font-size: 58px;
+    margin-left: 34px;
+    font-style: italic;
+}
+
+.home-text2{
+    margin-top: -20rem;
+    margin-left: 7rem;
+}
+
+.home-text3{
+    margin-top: -15rem;
+    margin-left: 10rem;
+}
